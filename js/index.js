@@ -13,12 +13,35 @@ $(function(){
         keyboardControl: true,
         mousewheelControl: true,
         direction: 'vertical',
+        watchSlidesProgress : true,
         onInit: function(mainSwiper){
             swiperAnimateCache(mainSwiper);
+
             //swiperAnimate(mainSwiper);
         }, 
-        onSlideChangeEnd: function(mainSwiper){ 
+
+        onProgress: function(mainSwiper, progress){
+            for (var i = 0; i < mainSwiper.slides.length; i++){
+            var slide = mainSwiper.slides[i];
+            es = slide.style;
+            es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'rotate('+360*slide.progress+'deg)';
+                    }
             console.log(mainSwiper.activeIndex);
+            switch(mainSwiper.activeIndex){
+                case 1:
+                var link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href= "css/network.css";
+                document.getElementsByTagName('head')[0].appendChild(link);
+                break;
+                case 3:
+                starry();
+                break;
+            }
+        },
+
+        onSlideChangeEnd: function(mainSwiper){ 
+            //console.log(mainSwiper.activeIndex);
             switch(mainSwiper.activeIndex){
                 case 1:
                 var link = document.createElement("link");
@@ -60,3 +83,4 @@ function resizer(){
     var containerWidth = $(".swiper-container").width();
     $(".arrow").css("left",(containerWidth-arrowWidth)/2);
 }
+

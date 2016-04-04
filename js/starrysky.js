@@ -41,15 +41,11 @@ function distance(star1, star2)
 
 function line(cxt, star1, star2)
 {
-	//if (!color) {color = 'rgba(255, 255, 255, 0.1)';}
     cxt.strokeStyle = 'rgba(255, 255, 255, 0.2)';
-    //cxt.strokeStyle = "white";
-    //cxt.lineWidth = 1;
     cxt.shadowBlur = 0;
     cxt.beginPath();
     cxt.moveTo(star1.x, star1.y);
-    cxt.lineTo(star2.x, star2.y);
-    
+    cxt.lineTo(star2.x, star2.y);    
     cxt.stroke();
     cxt.closePath();
 }
@@ -57,11 +53,6 @@ function line(cxt, star1, star2)
 function render(cxt)
 {
 	cxt.clearRect(0,0,WINDOW_WIDTH, WINDOW_HEIGHT);
-
-	//cxt.globalCompositeOperation = "source-over";
-    //cxt.fillStyle = "black";
-    //cxt.fillRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
-    //cxt.globalCompositeOperation = "lighter";
 	for(var i = 0; i < STAR_COUNT; i++){
 		cxt.fillStyle = stars[i].color;
 		cxt.shadowBlur = stars[i].size * 2;
@@ -74,18 +65,11 @@ function render(cxt)
 			if(distance(stars[i], stars[j]) < maxDistance){line(cxt, stars[i], stars[j]);}
 		}
 
-		/*if(i < STAR_COUNT-1 && distance(stars[i], stars[i+1]) < maxDistance){line(cxt, stars[i], stars[i+1]);}
-		if(i < STAR_COUNT-2 && distance(stars[i], stars[i+2]) < maxDistance){line(cxt, stars[i], stars[i+2]);}*/
-
 		stars[i].x += stars[i].vx;
 		stars[i].y += stars[i].vy;
 
-		//if(stars[i].x > WINDOW_WIDTH || stars[i].y > WINDOW_HEIGHT){stars[i].reset();}
 		if(stars[i].x > WINDOW_WIDTH){stars[i].x = 0}
-		if(stars[i].y > WINDOW_HEIGHT){stars[i].y = 0}
-
-		
+		if(stars[i].y > WINDOW_HEIGHT){stars[i].y = 0}	
 	}
-	
 }
 
