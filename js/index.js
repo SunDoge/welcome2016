@@ -1,6 +1,6 @@
 /*Made By: Yuna 2015*/
 var screenWidth,screenHeight;
-var foodSwiper,mainSwiper;
+var foodSwiper,mainSwiper,showed;
 $(function(){
     screenHeight = $("body").height();
     screenWidth = $("body").width();
@@ -35,7 +35,10 @@ $(function(){
                 document.getElementsByTagName('head')[0].appendChild(link);
                 break;
                 case 3:
-                starry();
+                if(!showed){
+                    starry();
+                    showed += 1;
+                };
                 break;
             }
         },
