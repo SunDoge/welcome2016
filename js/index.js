@@ -27,20 +27,21 @@ $(function(){
             es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'rotate('+360*slide.progress+'deg)';
                     }
             console.log(mainSwiper.activeIndex);
-            /*switch(mainSwiper.activeIndex){
+            switch(mainSwiper.activeIndex){
                 case 1:
                 var link = document.createElement("link");
                 link.rel = "stylesheet";
                 link.href= "css/network.css";
                 document.getElementsByTagName('head')[0].appendChild(link);
                 break;
-                /*case 3:
+                case 3:
                 if(!showed){
                     starry();
-                    showed += 1;
+                    showed = 1;
+                    $("#bfs").animate({opacity:"0"},1500);
                 };
                 break;
-            }*/
+            }
         },
 
         onSlideChangeEnd: function(mainSwiper){ 
@@ -55,7 +56,7 @@ $(function(){
                 case 3:
                 if(!showed){
                     starry();
-                    showed += 1;
+                    showed = 1;
                     $("#bfs").animate({opacity:"0"},1500);
                 };
                 break;
