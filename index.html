@@ -22,12 +22,13 @@
     }
 -->
 </head>
-<body style="height: 100%">
+<body style="height: 100%;">
 	<canvas id="starrysky"></canvas>
     <div id="music_switch"></div>
-    <div id="loading">
-        <img src="img/loading.gif" width="45" alt=""><br/>
-        等下换，不够漂亮
+    <div  id="loading"style="text-align:center; background-color:black;height:100%;width:100%;">
+        <div id = "loader" class = "loader">
+        </div>
+        <p style = "position:relative;top:-10%">loading</p>
     </div>
     <div id="main" class="swiper-container swiper-container-vertical">
         <div class="swiper-wrapper" >
@@ -105,16 +106,19 @@
                         <span id="num">3</span><span>行代码</span>
                     </p>
                     <p align="right">
-                        <span class="ani" swiper-animate-effect="fadeIn">让</span><span class="ani" swiper-animate-effect="fadeIn">白天</span><span class="ani" swiper-animate-effect="fadeIn">变成黑夜</span>                        
+                        <span class="ani" swiper-animate-effect="fadeIn">让</span>
+                        <span class="ani" swiper-animate-effect="fadeIn">白天</span>
+                        <span class="ani" swiper-animate-effect="fadeIn">变成黑夜</span>                        
                     </p>
 
                 </div>                
                 <img src="img/code.png" alt="" class="image">
                 <img src="img/arrow.png" class="arrow"/>
             </div>
-            <div class="swiper-slide">
+            <div id = "starrysky_page" class="swiper-slide" >
             	
                 <div class="centerBlock">
+                    <div id = "bfs"></div>
                     <p align="center">
                         <span id="num">74</span><span>行代码</span>
                     </p>
