@@ -216,58 +216,58 @@
 .connect-wrap .extras span:nth-child(9),
 .connect-wrap .extras span:nth-child(13){animation:extra-2 10s forwards}
 @keyframes smiley{
-	0%{transform:scale(0)}
-	20%{transform:scale(1)}
-	85%{transform:scale(1)}
-	100%{transform:translateX(1000px)}
+	0%{-webkit-transform:scale(0)}
+	20%{-webkit-transform:scale(1)}
+	85%{-webkit-transform:scale(1)}
+	100%{-webkit-transform:translateX(1000px)}
 }
 @keyframes link-1{
-	0%{transform:translate(0) scale(0)}
-	30%{transform:translate(0) scale(0)}
-	40%{transform:translate(-180px,0) scale(1)}
-	100%{transform:translate(-180px,0) scale(1)}
+	0%{-webkit-transform:translate(0) scale(0)}
+	30%{-webkit-transform:translate(0) scale(0)}
+	40%{-webkit-transform:translate(-180px,0) scale(1)}
+	100%{-webkit-transform:translate(-180px,0) scale(1)}
 }
 @keyframes link-2{
-	0%{transform:translate(0) scale(0)}
-	30%{transform:translate(0) scale(0)}
-	50%{transform:translate(-100px,-100px) scale(1)}
-	100%{transform:translate(-100px,-100px) scale(1)}
+	0%{-webkit-transform:translate(0) scale(0)}
+	30%{-webkit-transform:translate(0) scale(0)}
+	50%{-webkit-transform:translate(-100px,-100px) scale(1)}
+	100%{-webkit-transform:translate(-100px,-100px) scale(1)}
 }
 @keyframes link-3{
-	0%{transform:translate(0) scale(0)}
-	30%{transform:translate(0) scale(0)}
-	40%{transform:translate(0,-150px) scale(1)}
-	100%{transform:translate(0,-150px) scale(1)}
+	0%{-webkit-transform:translate(0) scale(0)}
+	30%{-webkit-transform:translate(0) scale(0)}
+	40%{-webkit-transform:translate(0,-150px) scale(1)}
+	100%{-webkit-transform:translate(0,-150px) scale(1)}
 }
 @keyframes link-4{
-	0%{transform:translate(0) scale(0)}
-	30%{transform:translate(0) scale(0)}
-	50%{transform:translate(100px,-100px) scale(1)}
-	100%{transform:translate(100px,-100px) scale(1)}
+	0%{-webkit-transform:translate(0) scale(0)}
+	30%{-webkit-transform:translate(0) scale(0)}
+	50%{-webkit-transform:translate(100px,-100px) scale(1)}
+	100%{-webkit-transform:translate(100px,-100px) scale(1)}
 }
 @keyframes link-5{
-	0%{transform:translate(0) scale(0)}
-	30%{transform:translate(0) scale(0)}
-	40%{transform:translate(180px,0) scale(1)}
-	100%{transform:translate(180px,0) scale(1)}
+	0%{-webkit-transform:translate(0) scale(0)}
+	30%{-webkit-transform:translate(0) scale(0)}
+	40%{-webkit-transform:translate(180px,0) scale(1)}
+	100%{-webkit-transform:translate(180px,0) scale(1)}
 }
 @keyframes extra{
-	0%{transform:scale(0)}
-	40%{transform:scale(0)}
-	50%{transform:scale(1)}
-	100%{transform:scale(1)}
+	0%{-webkit-transform:scale(0)}
+	40%{-webkit-transform:scale(0)}
+	50%{-webkit-transform:scale(1)}
+	100%{-webkit-transform:scale(1)}
 }
 @keyframes extra-1{
-	0%{transform:scale(0)}
-	50%{transform:scale(0)}
-	60%{transform:scale(1)}
-	100%{transform:scale(1)}
+	0%{-webkit-transform:scale(0)}
+	50%{-webkit-transform:scale(0)}
+	60%{-webkit-transform:scale(1)}
+	100%{-webkit-transform:scale(1)}
 }
 @keyframes extra-2{
-	0%{transform:scale(0)}
-	55%{transform:scale(0)}
-	65%{transform:scale(1)}
-	100%{transform:scale(1)}
+	0%{-webkit-transform:scale(0)}
+	55%{-webkit-transform:scale(0)}
+	65%{-webkit-transform:scale(1)}
+	100%{-webkit-transform:scale(1)}
 }
 
 
