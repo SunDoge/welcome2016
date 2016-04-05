@@ -22,11 +22,11 @@
     }
 -->
 </head>
-<body style="height: 100%;">
+<body>
 	<canvas id="starrysky"></canvas>
     <div id="music_switch"></div>
-    <div  id="loading"style="text-align:center; background-color:black;height:100%;width:100%;">
-        <div id = "loader" class = "loader">
+    <div  id="loading"style="top:-100px;text-align:center; background-color:black;height:100%;width:100%;">
+        <div id = "loader" class = "loader" style="top:10%;">
         </div>
         <p style = "position:relative;top:-10%">loading</p>
     </div>
@@ -85,34 +85,30 @@
             </div>
             <div class="swiper-slide">
 
-                <div class="centerBlock">
-
-					<div class="moon circle">
-						<div class="circle crater"></div>
-						<div class="circle crater"></div>
-						<div class="circle crater"></div>
-						<div class="circle crater large"></div>
-						  
-						<div class="eye circle"></div>
-						<div class="mouth circle half"></div>
-						<div class="eye circle"></div>
-				    </div>
-
-
-					<div class="cloud top"></div>
-					<div class="cloud bottom"></div>
-
-                    <p class="ani" align="right" swiper-animate-effect="bounceInDown">
-                        <span id="num">3</span><span>行代码</span>
-                    </p>
-                    <p align="right">
-                        <span class="ani" swiper-animate-effect="fadeIn">让</span>
-                        <span class="ani" swiper-animate-effect="fadeIn">白天</span>
-                        <span class="ani" swiper-animate-effect="fadeIn">变成黑夜</span>                        
-                    </p>
-
-                </div>                
-                <img src="img/code.png" alt="" class="image">
+                <div class="centerBlock" style ="margin-top:100px">
+		<div class="moon circle">
+			<div class="circle crater"></div>
+			<div class="circle crater"></div>
+			<div class="circle crater"></div>
+			<div class="circle crater large"></div>
+			<div class="eye circle"></div>
+			<div class="mouth circle half"></div>
+			<div class="eye circle"></div>
+            	    </div>
+            		<div class="cloud top"></div>
+            		<div class="cloud bottom"></div>
+                    </div>
+                    <div id = "three" style = "text-align:center;">
+                        <p class="ani" swiper-animate-effect="bounceInDown">
+                            <span id="num">3</span><span>行代码</span>
+                        </p>
+                        <p>
+                            <span class="ani" style = "text-indent:2em" swiper-animate-effect="fadeIn">让&nbsp白天&nbsp变成黑夜</span>
+                            <!--<span class="ani" swiper-animate-effect="fadeIn">白天</span>
+                            <span class="ani" swiper-animate-effect="fadeIn">变成黑夜</span> -->                       
+                        </p>
+                    </div>           
+                    <img src ="img/code.png" class ="image">    
                 <img src="img/arrow.png" class="arrow"/>
             </div>
             <div id = "starrysky_page" class="swiper-slide" >
@@ -120,11 +116,13 @@
                 <div class="centerBlock">
                     <div id = "bfs"></div>
                     <p align="center">
-                        <span id="num">74</span><span>行代码</span>
+                        <span class = "ani" id="num" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">74</span>
+                        <span class = "ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">行代码</span>
                     </p>
                     <p align="center">
-                        <span>绘制</span><span>一片星空</span>
-                    </p>                    
+                        <span class = "ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">绘制</span>
+                        <span class = "ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3s">一片星空</span>
+                    </p>
                 </div>
                 <img src="img/arrow.png" class="arrow"/>
                 
@@ -132,17 +130,22 @@
             <div class="swiper-slide">
             	
                 <div class="centerBlock">
-                    <p>
-                        <span class="fontSizeXXL">“</span>
-                        <span>Write the code.</span><br><span>&nbspChange the world.</span>
-                        <span class="fontSizeXXL">”</span>
+                    <p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                        <span class="fontSizeXL">“</span>
+                        <span>Write the code.</span>
+                        <br>
+                        <span>&nbspChange the world.</span>
+                        <span class="fontSizeXL">”</span>
                     </p>
-                    <p align="right">-WWDC14</p>
-                    <p align="center">
-                        <span>加入</span><span>百步梯技术部</span>
+                    <p align="right" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1s">-WWDC14</p>
+                    <p align="center" >
+                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s">加入</span>
+                        <span class="fontSizeXL ani" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s" >百步梯技术部</span>
                     </p>
-                    <p align="center"><span>码动</span><span>未来</span></p>
-                    <p id="tips" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3s" align="center">CLICK HERE ↑ FOR MORE&nbsp&nbsp</p>
+                    <p align="center" >
+                    <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3s">码动</span>
+                    <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="4s">未来</span></p>
+                    <p id="tips" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="5s" align="center">CLICK HERE ↑ FOR MORE&nbsp&nbsp</p>
                 </div>
             </div>
         </div>
