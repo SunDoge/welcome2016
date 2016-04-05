@@ -16,7 +16,6 @@ $(function(){
         watchSlidesProgress : true,
         onInit: function(mainSwiper){
             swiperAnimateCache(mainSwiper);
-
             //swiperAnimate(mainSwiper);
         }, 
 
@@ -38,7 +37,7 @@ $(function(){
                 if(!showed){
                     starry();
                     showed = 1;
-                    $("#bfs").animate({opacity:"0"},1500);
+                    $("#bfs").animate({opacity:"0"},4000);
                 };
                 break;
             }
@@ -57,7 +56,7 @@ $(function(){
                 if(!showed){
                     starry();
                     showed = 1;
-                    $("#bfs").animate({opacity:"0"},1500);
+                    $("#bfs").animate({opacity:"0"},4000);
                 };
                 break;
             }
@@ -76,6 +75,7 @@ $(function(){
 window.onload = function(){
     resizer();
     $("#loading").hide();
+    console.log('%c如果你有看源码的习惯，请联系384813529@qq.com or 513742616@qq.com','color:#ff0000;background:#e5e5e5');
     // var music = $("#music")[0];
     // music.currentTime = 2;
     // music.play();
