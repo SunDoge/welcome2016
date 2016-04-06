@@ -68,8 +68,8 @@ function render(cxt)
 		stars[i].x += stars[i].vx;
 		stars[i].y += stars[i].vy;
 
-		if(stars[i].x > WINDOW_WIDTH){stars[i].x = 0}
-		if(stars[i].y > WINDOW_HEIGHT){stars[i].y = 0}	
+		if(stars[i].x > WINDOW_WIDTH){stars[i].x = 0;stars[i].y = Math.random() * WINDOW_HEIGHT}
+		if(stars[i].y > WINDOW_HEIGHT){stars[i].y = 0;stars[i].x = Math.random() * WINDOW_WIDTH}	
 	}
 }
 
