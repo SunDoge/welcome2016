@@ -33,6 +33,11 @@ a{
 canvas{
 	position:fixed;
 }
+footer{
+	font-size:15px;
+	position:absolute;
+	bottom:0;
+}
 #loading{
 	margin:0;
 	top:0;
