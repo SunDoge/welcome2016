@@ -68,6 +68,17 @@ $(function(){
             //$("#loading").hide();
         }
     });
+    /*$("#music_switch").click(function(){
+        var status = $("#music_switch").css("background-position-x") == "100%" ? true : false;
+        var music = $(".music")[0];
+        if(status){
+            music.pause();
+            $("#music_switch").css("background-position", "left");
+        }else{
+            music.play();
+            $("#music_switch").css("background-position", "right");
+        }
+    })*/
     $(".arrow").click(function(){
         mainSwiper.slideNext();
     })
