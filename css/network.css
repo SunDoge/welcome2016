@@ -23,7 +23,7 @@
 	position:fixed;
 	margin-top:-87px;
 	margin-left:-87px;
-	transition:all .4s ease-in-out 0s;
+	-webkit-transition:all .4s ease-in-out 0s;
 }
 .connect-wrap .extras{
 	width:inherit;
@@ -130,22 +130,22 @@
 	border-radius:50%;
 	text-decoration:none;
 	background-color:#fff;
-	transition:all .4s ease-in-out 0s;
+	-webkit-transition:all .4s ease-in-out 0s;
 }
 .connect-wrap .links a:nth-child(1){
-	transform:translate(-180px,0);
+	-webkit-transform:translate(-180px,0);
 }
 .connect-wrap .links a:nth-child(2){
-	transform:translate(-100px,-100px);
+	-webkit-transform:translate(-100px,-100px);
 }
 .connect-wrap .links a:nth-child(3){
-	transform:translate(0,-150px);
+	-webkit-transform:translate(0,-150px);
 }
 .connect-wrap .links a:nth-child(4){
-	transform:translate(100px,-100px);
+	-webkit-transform:translate(100px,-100px);
 }
 .connect-wrap .links a:nth-child(5){
-	transform:translate(180px,0);
+	-webkit-transform:translate(180px,0);
 }
 .connect-wrap .smiley .face{
 	top:50%;
@@ -201,20 +201,20 @@
 .connect-wrap .smiley .legs:before{left:50px}
 .connect-wrap .smiley .legs:after{right:50px}
 
-.connect-wrap{animation:smiley 10s forwards}
-.connect-wrap .links a:nth-child(1){animation:link-1 10s forwards}
-.connect-wrap .links a:nth-child(2){animation:link-2 10s forwards}
-.connect-wrap .links a:nth-child(3){animation:link-3 10s forwards}
-.connect-wrap .links a:nth-child(4){animation:link-4 10s forwards}
-.connect-wrap .links a:nth-child(5){animation:link-5 10s forwards}
-.connect-wrap .extras span{animation:extra 10s forwards}
+.connect-wrap{-webkit-animation:smiley 10s forwards}
+.connect-wrap .links a:nth-child(1){-webkit-animation:link-1 10s forwards}
+.connect-wrap .links a:nth-child(2){-webkit-animation:link-2 10s forwards}
+.connect-wrap .links a:nth-child(3){-webkit-animation:link-3 10s forwards}
+.connect-wrap .links a:nth-child(4){-webkit-animation:link-4 10s forwards}
+.connect-wrap .links a:nth-child(5){-webkit-animation:link-5 10s forwards}
+.connect-wrap .extras span{-webkit-animation:extra 10s forwards}
 .connect-wrap .extras span:nth-child(2),
 .connect-wrap .extras span:nth-child(5),
-.connect-wrap .extras span:nth-child(7){animation:extra-1 10s forwards}
+.connect-wrap .extras span:nth-child(7){-webkit-animation:extra-1 10s forwards}
 .connect-wrap .extras span:nth-child(3),
 .connect-wrap .extras span:nth-child(8),
 .connect-wrap .extras span:nth-child(9),
-.connect-wrap .extras span:nth-child(13){animation:extra-2 10s forwards}
+.connect-wrap .extras span:nth-child(13){-webkit-animation:extra-2 10s forwards}
 @-webkit-keyframes smiley{
 	0%{-webkit-transform:scale(0)}
 	20%{-webkit-transform:scale(1)}
