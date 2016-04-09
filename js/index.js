@@ -86,7 +86,7 @@ $(function(){
 window.onload = function(){
     resizer();
     $("#loading").hide();
-    $("#music").play;
+    $("#music").play();
     console.log('%c如果你有看源码的习惯，并且你是一个萝莉，请联系384813529@qq.com','color:#ff0000;background:#e5e5e5');
     console.log('%c如果你有看源码的习惯，但是你并不是一个萝莉，请联系513742616@qq.com','color:#0000F6;background:#e5e5e5');
     // var music = $("#music")[0];
