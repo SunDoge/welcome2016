@@ -62,14 +62,6 @@ footer{
 	right: 10%;
 	bottom: 80px;
 }
-#bfs{
-	background-color:black;
-	position:fixed;
-	width:100%;
-	height:100%;
-	top:0;
-	right:0;
-}
 #three{
 	position:relative;
 	margin:10% auto;
