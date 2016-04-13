@@ -55,9 +55,7 @@ footer{
 }
 #tips{
 	margin-left: 0px;
-	font-size: 12px;
-	line-height:15pxs;
-	margin:0;
+	font-size: 15px;
 }
 #sign{
 	position: absolute;
@@ -142,7 +140,7 @@ footer{
 }
 @media screen and (min-width:500px){
 	body{font-size: 19px;}
-	#tips{font-size: 15px;}
+	#tips{font-size: 17px;}
 	/*#sign{font-size: 15px;}*/
 	.fontSizeS{
 		font-size: 15px;
