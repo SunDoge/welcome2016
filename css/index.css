@@ -55,7 +55,9 @@ footer{
 }
 #tips{
 	margin-left: 0px;
-	font-size: 15px;
+	font-size: 12px;
+	line-height:15pxs;
+	margin:0;
 }
 #sign{
 	position: absolute;
@@ -79,6 +81,9 @@ footer{
 	height: 33px;
 	cursor: pointer;
 }*/
+.connect-wrap{
+	z-index:4;
+}
 .swiper-container {
     width: 100%;
     /*max-width: 800px;*/
@@ -137,7 +142,7 @@ footer{
 }
 @media screen and (min-width:500px){
 	body{font-size: 19px;}
-	#tips{font-size: 17px;}
+	#tips{font-size: 15px;}
 	/*#sign{font-size: 15px;}*/
 	.fontSizeS{
 		font-size: 15px;
