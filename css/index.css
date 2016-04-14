@@ -79,6 +79,9 @@ footer{
 	height: 33px;
 	cursor: pointer;
 }*/
+.connect-wrap{
+	z-index:4;
+}
 .swiper-container {
     width: 100%;
     /*max-width: 800px;*/
